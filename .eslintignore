@@ -1,0 +1,7 @@
+**/*.marko.js
+**/node_modules
+dist
+demo
+public/js/lib
+client-redux/
+*.bundle.js

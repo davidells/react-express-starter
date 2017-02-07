@@ -1,0 +1,9 @@
+.sass-cache/
+dist/
+node_modules/
+*.bundle.js
+*.swp
+*.js.map
+config/local.json
+public/css/index.css
+npm-debug.log
