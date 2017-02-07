@@ -5,7 +5,7 @@
 
  var config = {
    entry: {
-     'vendor': ['react', 'react-dom', 'react-redux', 'redux', 'redux-thunk', 'backbone', 'underscore', 'jquery'],
+     'vendor': ['react', 'react-dom', 'backbone', 'underscore', 'jquery'],
      'index': './client/index.js'
    },
    devtool: prod ? 'source-map' : null,
