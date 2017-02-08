@@ -1,5 +1,7 @@
 .sass-cache/
 dist/
+config/
+dist-*
 node_modules/
 *.bundle.js
 *.swp
