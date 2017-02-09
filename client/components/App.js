@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Todo } from '../models/todo';
 import todoService from '../services/todos';
 
 export default class App extends Component {
@@ -16,7 +15,9 @@ export default class App extends Component {
 
   componentDidMount() {
     this.todoList.on(
-      'update change', this.forceUpdate.bind(this, null), this);
+      'update change',
+      this.forceUpdate.bind(this, null),
+      this);
   }
 
   componentWillUnmount() {
@@ -31,9 +32,9 @@ export default class App extends Component {
       return;
     }
 
-    const newTodo = new Todo();
-    newTodo.set('label', todoLabel);
-    this.todoList.create(newTodo);
+    this.todoList.create({
+      'label': todoLabel
+    });
 
     this.refs.todoLabel.value = '';
   }

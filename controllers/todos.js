@@ -2,7 +2,7 @@ var models = require('../models');
 var Todo = models.Todo;
 
 function errorHandler(res, err) {
-  
+
   var status = 500;
   if (err.status) {
     status = err.status;
